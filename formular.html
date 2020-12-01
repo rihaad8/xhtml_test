@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+        "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="application/xhtml+xml;charset=UTF-8"/>
+<title>Formular zum Hinzufügen einer neuen Lehrveranstaltung</title>
+</head>
+<body>
+<h3>Formular zum Hinzufügen einer neuen Lehrveranstaltung</h3>
+<form action="http://rubel.wirtschaft.tu-chemnitz.de/lehre/xml/parrot.php"
+  method="post">
+<table>
+  <tr>
+    <td>Lehrveranstaltung:
+    <input type="text" name="lv"/>
+    </td>
+  </tr>
+  <tr>
+    <td>Professur:
+	  <ul>
+		<li><input type="radio" name="prof" value="Produktionswirtschaft und Industrieberiebslehre" checked="checked"/>Produktionswirtschaft und Industrieberiebslehre</li>
+		<li><input type="radio" name="prof" value="Wirtschaftsmathematik"/>Wirtschaftsmathematik</li>
+		<li><input type="radio" name="prof" value="Mikroöokonomie"/>Mikroöokonomie</li>
+		<li><input type="radio" name="prof" value="Wirtschaftsinformatik I"/>Wirtschaftsinformatik I</li>
+		<li><input type="radio" name="prof" value="Marketing und Handelsbetriebslehre"/>Marketing und Handelsbetriebslehre</li>
+		<li><input type="radio" name="prof" value="Unternehmensrechnung"/>Unternehmensrechnung</li>
+		<li><input type="radio" name="prof" value="Öffentliches Recht und Wirtschaftsrecht"/>Öffentliches Recht und Wirtschaftsrecht</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+	  <td>Termin</td>
+  </tr>	  
+  <tr>	
+	  <td>
+		  Terminart:	
+		  <input type="radio" name="typ" value="Vorlesung" checked="checked"/>Vorlesung
+		  <input type="radio" name="typ" value="Übung"/>Übung
+		  <input type="radio" name="typ" value="Praktikum"/>Praktikum
+	 </td>
+  </tr>
+  <tr>	
+	  <td>
+		  Dozent:
+		  <input type="text" name="dozent"/>
+	  </td>
+  </tr>
+  <tr>	  
+	  <td>
+		   Raum:
+		  <input type="text" name="raum"/>
+	  </td>
+  </tr>
+  <tr>
+	  <td>Tag:
+	    <input type="radio" name="day" value="Montag" checked="checked"/>Mo
+		<input type="radio" name="day" value="Dienstag"/>Di
+		<input type="radio" name="day" value="Mittwoch"/>Mi
+		<input type="radio" name="day" value="Donnerstag"/>Do
+		<input type="radio" name="day" value="Freitag"/>Fr
+      </td>
+  </tr>
+  <tr>
+	  <td>Zeit:
+		 <input type="radio" name="time" value="time1" checked="checked"/>7:30-9:00
+		 <input type="radio" name="time" value="time2"/>9:15-10:45
+		 <input type="radio" name="time" value="time3"/>11:30-13:00
+		 <input type="radio" name="time" value="time4"/>13:45-15:15
+		 <input type="radio" name="time" value="time5"/>15:30-17:00
+		 <input type="radio" name="time" value="time6"/>17:15-18:45
+		 <input type="radio" name="time" value="time7"/>19:00-20:30
+	  </td>
+  </tr>
+</table>
+<p>
+<input type="submit" name="commit" value="Absenden"/>
+</p>
+</form>
+</body>
+</html>
